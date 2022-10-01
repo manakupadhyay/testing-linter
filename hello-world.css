@@ -1,8 +1,8 @@
 .hello {
-    display:block;
     color: red;
     margin: 0;
     font-weight: 400;
+    display: flex;
 }
 
 .test {
