@@ -3,11 +3,10 @@ function helloWorld() {
 }
 
 function anotherFunction() {
-    let a;
-    for (let index = 0; index < array.length; index++){
-        const element = array[index];
-        console.log(index);
-    }
+    const a = 10
+    const b = 10
+    return a + b
 }
 
 helloWorld()
+anotherFunction()

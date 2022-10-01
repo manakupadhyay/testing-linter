@@ -1,12 +1,11 @@
-.hello{
+.hello {
     display:block;
-    color: #000;
-    margin: 0px;
-    font-weight: bolder;
+    color: black;
+    margin: 10px;
+    font-weight: 500;
 }
-.hey{}
-.test
-{
+
+.test {
     position:relative;
     top:10px;
 }

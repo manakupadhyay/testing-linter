@@ -3,12 +3,12 @@ function helloWorld() {
 }
 
 function anotherFunction() {
-    let b;
-    for (let index = 0; index < array.length; index++){
-        const element = array[index];
-        console.log(index);
+    const array = [1, 2, 3, 4, 5]
+    for (let index = 0; index < array.length; index += 1) {
+        const element = array[index]
+        console.log(element)
     }
-    let a;
 }
 
 helloWorld()
+anotherFunction()
