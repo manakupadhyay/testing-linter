@@ -8,7 +8,6 @@ function anotherFunction() {
         const element = array[index];
         console.log(index);
     }
-    let a;
 }
 
 helloWorld()
