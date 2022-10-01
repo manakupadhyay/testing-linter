@@ -1,0 +1,30 @@
+{
+  "name": "testing-linter",
+  "version": "1.0.0",
+  "description": "A temporary repository to test SuperLinter",
+  "main": "helloWorld.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manakupadhyay/testing-linter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manakupadhyay/testing-linter/issues"
+  },
+  "homepage": "https://github.com/manakupadhyay/testing-linter#readme",
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "stylelint": "^14.13.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^28.0.0"
+  },
+  "dependencies": {
+    "postcss-less": "^6.0.0"
+  }
+}

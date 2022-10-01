@@ -1,8 +1,11 @@
 .hello{
     display:block;
-
+    color: #000;
+    margin: 0px;
 }
-
+.hey{
+    
+}
 .test
 {
     position:relative;
