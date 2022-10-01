@@ -28,6 +28,13 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Getting files for super linter
+        id: files
+        run: |
+          unFilteredFiles=$(git diff origin/${{ github.base_ref }}...origin/${{ github.head_ref }} --name-only --diff-filter=ACM)
+          filteredFiles="${unFilteredFiles//$'\n'/' '}"
+          echo "::set-output name=files::$filteredFiles"
+
       - name: Super-Linter
         uses: github/super-linter@v4.9.6
         env:
@@ -36,6 +43,7 @@ jobs:
           DEFAULT_BRANCH: master
 
           LINTER_RULES_PATH: /
+          FILTER_REGEX_INCLUDE: ${{ steps.files.outputs.files }}
           VALIDATE_CSS: true
           CSS_FILE_NAME: .stylelintrc.json
           VALIDATE_JAVASCRIPT_ES: true
