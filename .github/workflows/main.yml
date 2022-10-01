@@ -37,7 +37,6 @@ jobs:
 
           LINTER_RULES_PATH: /
           VALIDATE_CSS: true
-          FILTER_REGEX_INCLUDE: .*src/.*
           CSS_FILE_NAME: .stylelintrc.json
           VALIDATE_JAVASCRIPT_ES: true
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
